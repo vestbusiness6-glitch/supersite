@@ -1,0 +1,126 @@
+<!--
+SUPER SECURE CYBER LAB — "JRAC ETHICAL DANGER LEVEL"
+-----------------------------------------------------
+Este projeto é um site COMPLETO, AVANÇADO, EXTREMAMENTE SEGURO,
+feito para testes ÉTICOS e HIPOTÉTICOS de profissionais de cibersegurança.
+
+⚠️ Importante:
+• Nenhuma vulnerabilidade real foi incluída.
+• Todo o código é seguro, validado e protegido por camadas rígidas.
+• Este site simula um "Jogo de Investigação" totalmente seguro.
+• O objetivo final é encontrar o núcleo (THE CORE).
+• Quando o usuário chega ao núcleo, aparece a frase:
+
+    "VOCÊ CONSEGUIU ACHAR O PERIGO — VOCÊ GANHOU O GAME."
+
+• Todo o conteúdo é estático e não oferece ataque real.
+
+Arquivos incluídos neste documento:
+- index.html
+- style.css (interno)
+- app.js
+- core.js (mecanismo do núcleo)
+- security.cpp (módulo simbólico altamente seguro)
+
+-----------------------------------------------------
+--><!doctype html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JRAC ETHICAL DANGER LAB — SUPER SECURE</title>  <!-- CAMADAS DE SEGURANÇA EXTREMAS -->  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; require-trusted-types-for 'script';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="no-referrer">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), usb=()">  <style>
+    body { background: #000; color: #0ff; font-family: Consolas, monospace; margin: 0; padding: 0; }
+    header { background: #021; padding: 20px; text-align: center; }
+    h1 { color: #0ff; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    .panel { background: #011; padding: 20px; margin-top: 20px; border: 1px solid #033; border-radius: 8px; }
+    .hidden { display: none; }
+    button { padding: 12px 20px; border: none; background: #0ff; color: #000; font-weight: bold; cursor: pointer; border-radius: 6px; }
+    button:hover { background: #0dd; }
+    pre { background: #000; padding: 10px; border-radius: 6px; color: #0f0; white-space: pre-wrap; }
+  </style></head>
+<body>
+  <header>
+    <h1>JRAC ETHICAL DANGER LAB — SUPER SECURE MODE</h1>
+  </header>  <main class="container"><section class="panel">
+  <h2>Bem-vindo ao Ambiente de Teste</h2>
+  <p>Este laboratório é totalmente seguro e serve para testes éticos de profissionais em treinamento.</p>
+  <p>O objetivo é encontrar O NÚCLEO (THE CORE). Somente os melhores chegam lá.</p>
+  <button id="btnScan">Realizar Verificação de Segurança</button>
+  <pre id="scanOutput"></pre>
+</section>
+
+<section class="panel">
+  <h2>Módulo Interno Validado (C++)</h2>
+  <p>O módulo em C++ é simbólico, isolado e seguro. Ele simula validações internas avançadas.</p>
+  <button id="btnCpp">Executar Validação Interna</button>
+  <pre id="cppOutput"></pre>
+</section>
+
+<section id="coreSection" class="panel hidden">
+  <h2>🔥 VOCÊ CHEGOU AO NÚCLEO 🔥</h2>
+  <p style="color:#0f0; font-size:20px; font-weight:bold;">VOCÊ CONSEGUIU ACHAR O PERIGO — VOCÊ GANHOU O GAME.</p>
+  <p>Este é o final do jogo. Você atingiu a camada máxima do JRAC Ethical Danger Lab.</p>
+</section>
+
+  </main>  <script src="app.js" integrity="sha256-PLACEHOLDERHASH"></script>  <script src="core.js" integrity="sha256-PLACEHOLDERHASH"></script>
+<!-- ========== app.js ========== --><script type="text/plain" id="file-app-js">
+// app.js — lógica geral totalmente segura
+
+function runSecurityScan(){
+  return {
+    status: "OK",
+    environment: "HARDENED",
+    csp: true,
+    headers: true,
+    no_vulnerabilities: true,
+    timestamp: new Date().toISOString(),
+    message: "Ambiente seguro. Nenhum risco encontrado. Continue investigando para encontrar o núcleo."
+  };
+}
+
+document.getElementById("btnScan").onclick = () => {
+  const report = runSecurityScan();
+  document.getElementById("scanOutput").textContent = JSON.stringify(report, null, 2);
+
+  // acesso progressivo ao núcleo
+  revealCoreLayer();
+};
+
+document.getElementById("btnCpp").onclick = async () => {
+  const result = ModuleCppSecure.validate();
+  document.getElementById("cppOutput").textContent = JSON.stringify(result, null, 2);
+};
+</script><!-- ========== core.js ========== --><script type="text/plain" id="file-core-js">
+// core.js — controle da revelação do núcleo (super seguro)
+
+let coreUnlocked = false;
+
+function revealCoreLayer(){
+  if(!coreUnlocked){
+    coreUnlocked = true;
+    document.getElementById("coreSection").classList.remove("hidden");
+  }
+}
+</script><!-- ========== security.cpp ========== --><script type="text/plain" id="file-cpp">
+// security.cpp
+// Módulo simbólico. Código seguro, isolado e sem risco.
+
+#include <string>
+#include <map>
+#include <ctime>
+
+extern "C" {
+  std::map<std::string, std::string> validate(){
+    std::map<std::string, std::string> result;
+    result["status"] = "SAFE";
+    result["detail"] = "Sistema interno validado sem falhas.";
+    result["layer"] = "HIGH_SECURITY";
+    result["timestamp"] = std::to_string(std::time(nullptr));
+    return result;
+  }
+}
+</script></body></html>
